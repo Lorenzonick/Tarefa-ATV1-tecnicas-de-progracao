@@ -1,12 +1,12 @@
-importar  java . útil . Scanner ;
+import java.util.Scanner;
 
- classe  pública Principal {
-    public  static  void  main ( String [] args ) {
-        Scanner  scanner = novo  Scanner ( System . in );
-    Sistema . fora . println ( "Digite um número:" );
-    int  numero = scanner . próximoInt ();
-     para ( int  eu = 1 ; eu <= 10 ; eu ++){
-         Sistema . fora . println ( número + "x" + i + "= " + número * i );
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+    System.out.println("Digite um número:");
+    int numero = scanner.nextInt();
+     for(int i = 1; i<=10; i++){
+         System.out.println(numero + " x " + i + " = " + numero * i);
      }
     }
 }
