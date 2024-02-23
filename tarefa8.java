@@ -1,18 +1,18 @@
-importar  java . útil . Scanner ;
+import java.util.Scanner;
 
- classe  pública Principal {
-    public  static  void  main ( String [] args ) {
-        Scanner  scanner = novo  Scanner ( System . in );
-        Sistema . fora . println ( "Digite um número inteiro:" );
-        int  n = scanner . próximoInt ();
-        int  soma = 0 ;
-         número interno = 1 ;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite um número inteiro:");
+        int n = scanner.nextInt();
+        int soma = 0;
+        int numero = 1;
 
-        for ( int  i = 0 ; i < n ; i ++) {
-            soma += numero ;
-            número += 2 ;
+        for (int i = 0; i < n; i++) {
+            soma += numero;
+            numero += 2;
         }
 
-        Sistema . fora . println ( "A soma dos primeiros " + n + " números ímpares é: " + soma );
+        System.out.println("A soma dos primeiros " + n + " números ímpares é: " + soma);
     }
 }
