@@ -1,14 +1,14 @@
-importar  java . útil . Scanner ;
+import java.util.Scanner;
 
- classe  pública Principal {
-    public  static  void  main ( String [] args ) {
-        Scanner  scanner = novo  Scanner ( System . in );
-    Sistema . fora . println ( "Digite um número:" );
-    int  numero = scanner . próximoInt ();
-     fatorial longo = 1 ;
-    for ( int  i = 1 ; i <= número ; i ++){
-        fatorial *= i ;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+    System.out.println("Digite um número:");
+    int numero = scanner.nextInt();
+    long fatorial = 1;
+    for (int i = 1; i<= numero; i++){
+        fatorial *= i;
     }
-    Sistema . fora . println ( "O fatorial de " + numero + " é " + fatorial + "." );
+    System.out.println("O fatorial de " + numero + " é " + fatorial + ".");
     }
 }
