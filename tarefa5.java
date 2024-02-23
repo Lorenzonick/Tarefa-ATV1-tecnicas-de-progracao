@@ -1,14 +1,14 @@
-importar  java . útil . Scanner ;
+import java.util.Scanner;
 
- classe  pública Principal {
-    public  static  void  main ( String [] args ) {
-        Scanner  scanner = novo  Scanner ( System . in );
-    Sistema . fora . println ( "Digite um número inteiro:" );
-    int  numero = scanner . próximoInt ();
-    if ( número % 2 == 0 ){
-        Sistema . fora . println ( "O número é par." );
-    } outro {
-        Sistema . fora . println ( "O número é impar." );
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+    System.out.println("Digite um número inteiro:");
+    int numero = scanner.nextInt();
+    if (numero % 2 == 0){
+        System.out.println("O número é par.");
+    } else{
+        System.out.println("O número é impar.");
      }
     }
 }
