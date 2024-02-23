@@ -1,14 +1,14 @@
-importar  java . útil . Scanner ;
+import java.util.Scanner;
 
- classe  pública Principal {
-    public  static  void  main ( String [] args ) {
-        Scanner  scanner = novo  Scanner ( System . in );
-        Sistema . fora . println ( "Digite um número:" );
-        int  numero = scanner . próximoInt ();
-        if ( número > 0 ){
-            Sistema . fora . println ( "Número positivo!" );
-        } outro {
-            Sistema . fora . println ( "Número negativo!" );
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite um número:");
+        int numero = scanner.nextInt();
+        if (numero>0){
+            System.out.println("Número positivo!");
+        } else{
+            System.out.println("Número negativo!");
         }
     }
 }
