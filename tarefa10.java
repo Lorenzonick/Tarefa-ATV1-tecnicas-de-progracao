@@ -1,21 +1,21 @@
-importar  java . útil . Scanner ;
+import java.util.Scanner;
 
- classe  pública Principal {
-    public  static  void  main ( String [] args ) {
-        Scanner  scanner = novo  Scanner ( System . in );
-        String  senhaSecreta = "Java123" ;
-         Tentativa de cordas ;
-
-        enquanto ( verdadeiro ){
-            Sistema . fora . println ( "Digite a senha: " );
-            tentativa =   scanner . próximaLinha ();
-
-            if ( tentativa . equals ( senhaSecreta )){
-                Sistema . fora . println ( "Acesso concedido!" );
-                quebrar ;
-            } outro {
-                Sistema . fora . println ( "Tentativa inválida, tente novamente." );
-            }
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String senhaSecreta = "Java123";
+        String tentativa;
+       
+        while (true){
+            System.out.println("Digite a senha: ");
+            tentativa =  scanner.nextLine();
+            
+            if(tentativa.equals(senhaSecreta)){
+                System.out.println("Acesso concedido!");
+                break;
+            } else {
+                System.out.println("Tentativa inválida, tente novamente.");
+            } 
         }
     }
 }
